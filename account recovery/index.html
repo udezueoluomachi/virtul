@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="Virtul, crypto investment, recover my Virtul account, recover account, forgotten password"/>
+        <meta name="description" content="Gain back access to your Virtul account"/>
+        <title>Virtul - Account recovery</title>
+        <meta name="og:title" content="Virtul - Account recovery" />
+        <meta name="og:description" content="Gain back access to your Virtul account" />
+        <meta name="og:site_name" content="Virtul" />
+        <meta name="og:url" content="https://Virtul.net/account recovery" />
+        <meta name="og:type" content="stock trading" />
+        <meta name="og:image" content="https://Virtul.net/images/social-media/buy.jpg" />
+        <meta property="twitter:url" content="https://Virtul.net/account recovery">
+        <meta property="twitter:description" content="Gain back access to your Virtul account">
+        <meta property="twitter:image" content="https://Virtul.net/images/social-media/buy.jpg">
+        <meta property="twitter:title" content="Virtul - Account recovery">
+        <noscript>
+            <meta http-equiv="refresh" content="20; ../noscript/index.html"/>
+        </noscript>
+        <link rel="stylesheet" href="../styles/css/all.css"/>
+        <link rel="stylesheet" href="../styles/animate.css">
+        <link rel="icon" href="../images/favicon.png" sizes="16x16"/>
+        <link rel="stylesheet" href="../styles/main.min.css"/>
+        <script type="text/javascript" src="../scripts/jquery.js"></script>
+        <script src="../scripts/url.js"></script>
+        <script src="../scripts/main.js"></script>
+        <script type="text/javascript" src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <div class="header flex-box">
+                <div class="header-content">
+                    <img src="../images/logo.png" id="logo"/>
+                </div>
+            </div>
+            <div class="form-and-form-nav-cont">
+                <div class="form-cont">
+                    <h1 class="text-grey-variant-2-color">
+                        Account recovery
+                    </h1>
+                    <br/>
+                    <form action="#login.js" method="POST" enctype="application/x-www-form-urlencoded" name="recovery-form">
+                        <p class="text-grey-variant-2-color user-guide smaller-size">
+                            Type in the email address of your account
+                        </p>
+                        <div class="stage-1">
+                            <input type="email" id="email" class="input-section text-grey-variant-2-color" name="email" placeholder="Email address" required/>
+                        </div>
+                        <br/>
+                        <div class="stage-2 none">
+                            <input type="number" id="verification-code-input" class="input-section text-grey-variant-2-color" name="verification-code-input" placeholder="Verification code" required min="0" maxlength="5" max="99999"/>
+                        </div>
+                        <div class="stage-3 none">
+                            <input type="password" id="password" class="input-section text-grey-variant-2-color" name="password" placeholder="Password" required/>
+                            <br/>
+                            <ul class="validation-list-text text-grey-variant-2-color password-validator">
+                                <li id="password-length">
+                                    Password must contain at least 8 characters.
+                                </li>
+                                <li id="password-special-characters">
+                                    Password must contain alphabets, numbers and characters like @ or  # or $ or %.
+                                </li>
+                                <li id="password-match">
+                                    Passwords must be the same.
+                                </li>
+                            </ul>
+                            <input type="password" id="retyped-password" placeholder="Retype password" class="input-section text-grey-variant-2-color">
+                        </div>
+                        <input type="submit" class="input-section default-blue-bg text-white-color" value="Continue" disabled>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--loader template-->
+        <div class="loader-box-cont">
+            <div class="loader-box">
+                <div class="loader-content-cont">
+                    <img id="logo-in-loader" src="../images/favicon.png"/>
+                    <div class="loader-balls-cont flex-box">
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js">
+        </script>
+    </body>
+</html>

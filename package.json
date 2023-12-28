@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "socket.io-client": "^4.5.1",
+    "sweetalert": "^2.1.2"
+  },
+  "name": "Virtul-frontend",
+  "description": "Commence the implementation of the new Interface designs. That of the Landing page should come first.\r <br>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Virtul/Virtul-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Virtul/Virtul-frontend/issues"
+  },
+  "homepage": "https://github.com/Virtul/Virtul-frontend#readme"
+}

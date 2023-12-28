@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="Virtul, crypto investment, sell assets on Virtul"/>
+        <meta name="description" content="Sell your crypto stocks"/>
+        <title>Virtul - Sell</title>
+        <meta name="og:title" content="Virtul - Sell" />
+        <meta name="og:description" content="Sell your crypto stocks" />
+        <meta name="og:site_name" content="Virtul" />
+        <meta name="og:url" content="https://Virtul.net/sell" />
+        <meta name="og:type" content="stock trading" />
+        <meta name="og:image" content="https://Virtul.net/images/social-media/buy.jpg" />
+        <meta property="twitter:url" content="https://Virtul.net/sell">
+        <meta property="twitter:description" content="Sell your crypto stocks">
+        <meta property="twitter:image" content="https://Virtul.net/images/social-media/buy.jpg">
+        <meta property="twitter:title" content="Virtul - Sell">
+        <noscript>
+            <meta http-equiv="refresh" content="20; ../noscript/index.html"/>
+        </noscript>
+        <link rel="stylesheet" href="../styles/css/all.css"/>
+        <link rel="stylesheet" href="../styles/animate.css">
+        <link rel="icon" href="../images/favicon.png" sizes="16x16"/>
+        <link rel="stylesheet" href="../styles/main.min.css"/>
+        <script type="text/javascript" src="../scripts/jquery.js"></script>
+        <script src="../scripts/url.js"></script>
+        <script type="text/javascript" src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="../scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <div class="header flex-box">
+                <div class="header-content">
+                    <img src="../images/logo.png" id="logo"/>
+                </div>
+                <div class="nav-at-header">
+                    <a href="../dashboard" class="footer-nav-link text-grey-variant-2-color">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="../trade" class="footer-nav-link">
+                        <i class="fas fa-exchange-alt"></i>
+                    </a>
+                    <a href="../wallet" class="footer-nav-link text-grey-variant-2-color">
+                        <i class="fas fa-wallet"></i>
+                    </a>
+                </div>
+                <div class="header-content menu-or-menu-btn-toggle text-default-blue-color">
+                        <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="body-content">
+                <div class="side-menu animate__animated animate__slideinright">
+                    <div class="flex-box header no-border">
+                        <div class="header-content menu-or-menu-btn-toggle">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <p class="header-content mini-size bold text-grey-variant-2-color">Menu</p>
+                        <div class="header-content text-grey-variant-2-color" style="font-size: 20px;">
+                                <i class="fas fa-question-circle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="necessary-links-in-wallet-page-cont smaller-size">
+                        <a href="../notifications" class="flex-box" title="notifications">
+                            <p>
+                                Notifications
+                            </p>
+                            <p>
+                                <i class="fas fa-bell" style="transform: rotate(-20deg);"></i>
+                            </p>
+                        </a>
+                        <a href="../send" class="flex-box" title="send to others">
+                            <p>
+                                Send
+                            </p>
+                            <p>
+                                <i class="fas fa-sign-in-alt" style="transform: rotate(-90deg);"></i>
+                            </p>
+                        </a>
+                        <a href="../receive" class="flex-box" title="receive from others">
+                            <p>
+                                Receive
+                            </p>
+                            <p>
+                                <i class="fas fa-sign-in-alt" style="transform: rotate(90deg);"></i>
+                            </p>
+                        </a>
+                        <a href="../earn" class="flex-box" title="earn crypto stocks">
+                            <p>
+                                Earn more
+                            </p>
+                            <p>
+                                <i class="fas fa-arrow-right"></i>
+                            </p>
+                        </a>
+                        <a href="../settings" class="flex-box" title="settiings">
+                            <p>
+                                Settings
+                            </p>
+                            <p>
+                                <i class="fas fa-cog"></i>
+                            </p>
+                        </a>
+                        <a href="javascript:void(0);" class="flex-box logout-btn bold" title="earn crypto stocks">
+                            <p class="text-default-blue-color">
+                                Logout
+                            </p>
+                            <p>
+                                <i class="fas fa-user"></i>
+                            </p>
+                        </a>
+                        <div class="advertizement-cont">
+                            <p class="text-grey-variant-2-color">
+                                Advertisement
+                            </p>
+                            <div class="advertizement-main-cont">
+                                <div class="advertizement-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="price-in-main-content fixed">
+                        <p class="text-grey-variant-2-color">
+                            <i class="fas fa-chart-line"></i> 1 omc = <span class="current-price-of-omc-cont">---</span> usd
+                        </p>
+                    </div>
+                    <div class="form-and-form-nav-cont" style="margin-top:-18px;">
+                        <div class="form-cont">
+                            <form action="#sell.js" method="POST" enctype="application/x-www-form-urlencoded" name="stock-selling-form">
+                                <p class="text-grey-variant-2-color stock-balance-cont-in-sell-page">
+                                    Stock = $ <span class="stock-balance-in-usd-cont">---</span> usd
+                                    ~
+                                    <span class="stock-balance-in-omc-cont">---</span> omc
+                                </p>
+                                <div class="omc-input">
+                                    <input type="number" step="0.000000000000001" id="amount-to-sell-in-omc" class="input-section text-grey-variant-2-color" name="amount-to-sell-in-omc" placeholder="0.0" required/>
+                                </div>
+                                <div class="usd-input">
+                                    <input type="number" step="0.000000000000001" id="amount-to-sell-in-usd" class="input-section text-grey-variant-2-color" name="amount-to-sell-in-usd" placeholder="0.0" required/>
+                                </div>
+                                <br/>
+                                <ul>
+                                    <li style="list-style: none;" class="text-grey-variant-2-color">Transaction fee : <span class="transaction-fee-cont">$ 0</span></li>
+                                </ul>
+                                <ul class="validation-list-text">
+                                    <li id="not-enough-balance-notifiyer">
+                                        What you see in the input fields is the maximum amount.
+                                        <br/>
+                                        You can not sell more than what you have in your stock asset balance.
+                                    </li>
+                                </ul>
+                                <input type="submit" class="input-section bg-green text-white-color" value="Sell" disabled>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-at-footer flex-box">
+                <a href="../dashboard" class="footer-nav-link text-grey-variant-2-color">
+                    <i class="fas fa-home text-grey-variant-2-color"></i>
+                </a>
+                <a href="../trade" class="footer-nav-link">
+                    <i class="fas fa-exchange-alt fa-exchange-alt-active"></i>
+                </a>
+                <a href="../wallet" class="footer-nav-link text-grey-variant-2-color">
+                    <i class="fas fa-wallet"></i>
+                </a>
+            </div>
+        </div>
+        <!--modal.js template-->
+        <div class="modal-box-cont">
+            <div class="modal-box">
+                <div class="modal-content-text">
+                    <p class="centered-text mini-size">
+                    </p>
+                </div>
+                <div class="modal-toggle">
+                </div>
+            </div>
+        </div>
+        <!--loader template-->
+        <div class="loader-box-cont">
+            <div class="loader-box">
+                <div class="loader-content-cont">
+                    <img id="logo-in-loader" src="../images/favicon.png"/>
+                    <div class="loader-balls-cont flex-box">
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js">
+        </script>
+    </body>
+</html>

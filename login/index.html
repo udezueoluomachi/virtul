@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="Virtul, crypto investment"/>
+        <meta name="description" content="Login to your Virtul account"/>
+        <title>Virtul - Login</title>
+        <meta name="og:title" content="Virtul - Login" />
+        <meta name="og:description" content="Login to your Virtul account" />
+        <meta name="og:site_name" content="Virtul" />
+        <meta name="og:url" content="https://Virtul.net/login" />
+        <meta name="og:type" content="stock trading" />
+        <meta name="og:image" content="https://Virtul.net/images/social-media/buy.jpg" />
+        <meta property="twitter:url" content="https://Virtul.net/login">
+        <meta property="twitter:description" content="Login to your Virtul account">
+        <meta property="twitter:image" content="https://Virtul.net/images/social-media/buy.jpg">
+        <meta property="twitter:title" content="Virtul - Login">
+        <noscript>
+            <meta http-equiv="refresh" content="20; ../noscript/index.html"/>
+        </noscript>
+        <link rel="stylesheet" href="../styles/css/all.css"/>
+        <link rel="stylesheet" href="../styles/animate.css">
+        <link rel="icon" href="../images/favicon.png" sizes="16x16"/>
+        <link rel="stylesheet" href="../styles/main.min.css"/>
+        <script type="text/javascript" src="../scripts/jquery.js"></script>
+        <script src="../scripts/url.js"></script>
+        <script type="text/javascript" src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
+        <script type ="text/javascript" src="../scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <div class="header flex-box">
+                <div class="header-content">
+                    <img src="../images/logo.png" id="logo"/>
+                </div>
+            </div>
+            <div class="form-and-form-nav-cont">
+                <div class="form-nav flex-box">
+                    <a href="../register/" class="text-grey-variant-2-color mini-size centered-text" title="Register to get started">
+                        Register
+                    </a>
+                    <a href="javascript:void(0);" class="text-default-blue-color bg-light-grey mini-size centered-text" title="Login to your account">
+                        Login
+                    </a>
+                </div>
+                <div class="form-cont">
+                    <form action="#login.js" method="POST" enctype="application/x-www-form-urlencoded" name="login-form">
+                        <input type="email" id="email" class="input-section text-grey-variant-2-color" name="email" placeholder="Email address" required/>
+                        <br/>
+                        <input type="password" id="password" class="input-section text-grey-variant-2-color" name="password" placeholder="Password" required/>
+                        <br/>
+                        <ul class="validation-list-text text-grey-variant-2-color">
+                            <li id="email-check">
+                                An account does not exist for this email address
+                            </li>
+                            <li id="password-check">
+                                Wrong password.
+                            </li>
+                        </ul>
+                        <a href="../account recovery" class="text-default-blue-color" title="Forgot password">forgot password ?</a>
+                        <br/>
+                        <input type="submit" class="input-section default-blue-bg text-white-color" value="Login" disabled>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--loader template-->
+        <div class="loader-box-cont">
+            <div class="loader-box">
+                <div class="loader-content-cont">
+                    <img id="logo-in-loader" src="../images/favicon.png"/>
+                    <div class="loader-balls-cont flex-box">
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="Virtul, crypto investment, verify Virtul email address, verify email address"/>
+        <meta name="description" content="Verify your email address"/>
+        <title>Virtul - Verify</title>
+        <meta name="og:title" content="Virtul - Verify" />
+        <meta name="og:description" content="Verify your email address" />
+        <meta name="og:site_name" content="Virtul" />
+        <meta name="og:url" content="https://Virtul.net/verify" />
+        <meta name="og:type" content="stock trading" />
+        <meta name="og:image" content="https://Virtul.net/images/social-media/buy.jpg" />
+        <meta property="twitter:url" content="https://Virtul.net/verify">
+        <meta property="twitter:description" content="Verify your email address">
+        <meta property="twitter:image" content="https://Virtul.net/images/social-media/buy.jpg">
+        <meta property="twitter:title" content="Virtul - Verify">
+        <noscript>
+            <meta http-equiv="refresh" content="20; ../noscript/index.html"/>
+        </noscript>
+        <link rel="stylesheet" href="../styles/css/all.css"/>
+        <link rel="stylesheet" href="../styles/animate.css">
+        <link rel="icon" href="../images/favicon.png" sizes="16x16"/>
+        <link rel="stylesheet" href="../styles/main.min.css"/>
+        <script type="text/javascript" src="../scripts/jquery.js"></script>
+        <script src="../scripts/url.js"></script>
+        <script type="text/javascript" src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="../scripts/main.js"></script>
+        <style>
+            .email-address-cont {
+                font-weight : bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="body">
+            <div class="header flex-box">
+                <div class="header-content">
+                    <img src="../images/logo.png" id="logo"/>
+                </div>
+            </div>
+            <h1 class="centered-text text-grey-variant-2-color">
+                Verify Email Address
+            </h1>
+            <div class="form-and-form-nav-cont" style="margin-top:-18px;">
+                <div class="form-cont">
+                    <p class="text-grey-variant-2-color">
+                        A verification code was sent to 
+                        <span class="email-address-cont">your email address</span>.
+                        <br/>
+                        <br/>
+                        Please type the verification code to verify your email address.
+                    </p>
+                    <form action="#verify.js" method="POST" enctype="application/x-www-form-urlencoded" name="email-verification-form">
+                        <input type="number" id="verification-code-input" class="input-section text-grey-variant-2-color" name="verification-code-input" placeholder="Verification code" required min="0" maxlength="5" max="99999"/>
+                        <br/>
+                        <ul class="validation-list-text text-grey-variant-2-color">
+                            <li id="wrong-code">
+                                Type valid verification code
+                            </li>
+                        </ul>
+                        <br/>
+                        <p class="text-grey-variant-2-color text-after">
+                            If you haven't received the verification code yet click <a href="javascript:void(0);" class="resend-verification-code-tigger text-default-blue-color bold">resend</a>
+                        </p>
+                        <input type="submit" class="input-section default-blue-bg text-white-color" value="Verify" disabled>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--loader template-->
+        <div class="loader-box-cont">
+            <div class="loader-box">
+                <div class="loader-content-cont">
+                    <img id="logo-in-loader" src="../images/favicon.png"/>
+                    <div class="loader-balls-cont flex-box">
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                        <div class="loader-ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./index.js">
+        </script>
+    </body>
+</html>
