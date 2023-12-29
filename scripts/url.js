@@ -1,4 +1,4 @@
-const price_api_url = "http://localhost:4003/"//"https://price-api.Virtul.net/";
-const transactions_server_url = "http://localhost:4002/"//"https://transactions.Virtul.net/";
-const user_data_api_server = "http://localhost:4001/"//"https://user-data-api.Virtul.net/";
-const user_authentication_server = "http://localhost:4000/"//"https://user-authentication.Virtul.net/";
+const price_api_url = "https://virtul-pricing-api.onrender.com/"// "http://localhost:4003/"
+const transactions_server_url = "http://localhost:4002/"
+const user_data_api_server = "https://virtul-user-data-api.onrender.com/" // "http://localhost:4001/"
+const user_authentication_server = "https://virtul-authentication-system.onrender.com/" //http://localhost:4000/"
